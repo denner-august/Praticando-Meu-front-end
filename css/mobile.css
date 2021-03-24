@@ -1,0 +1,39 @@
+@media screen and (max-width: 880px) {
+  header {
+    padding: 5px;
+  }
+  header h1 {
+    margin: 10px;
+  }
+  header ul {
+    padding: 15px;
+  }
+  header ul a {
+    margin-top: 5px;
+    line-height: 50px;
+  }
+  section {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section div {
+    width: 80vw;
+    margin-bottom: 15px;
+  }
+  section img {
+    width: 60vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  section div h2, section div p {
+    font-size: 1.3rem;
+  }
+}
+/*# sourceMappingURL=mobile.css.map */
