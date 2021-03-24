@@ -55,10 +55,92 @@ section {
 section div {
   margin-top: 5%;
   width: 50%;
-  color: #3E54A3;
+  color: #2f3d70;
 }
 
 section div h2, section div p {
   font-size: 2rem;
+}
+
+footer {
+  height: 100vh;
+  background-color: #E82C4F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer div {
+  width: 50vw;
+  height: 100%;
+}
+
+footer div img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+footer form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 80vh;
+  width: 45vw;
+  margin: auto;
+  color: black;
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+footer form h1 {
+  text-align: center;
+}
+
+footer form input, footer form button, footer form textarea {
+  width: 70%;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+footer form input {
+  line-height: 50px;
+  padding-bottom: 10px;
+  border: none;
+  border-bottom: 1px solid;
+}
+
+footer form textarea {
+  margin-top: 10px;
+  height: auto;
+  resize: none;
+  border: 1px solid;
+}
+
+footer form button {
+  background-color: white;
+  border: 1px solid;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+footer form button:focus {
+  background-color: #dadada;
 }
 /*# sourceMappingURL=css.css.map */

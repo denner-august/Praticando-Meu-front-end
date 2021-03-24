@@ -27,6 +27,29 @@
    }
 }
 
+@media screen and(max-width:751px){
+
+
+    footer{
+        padding: 20px 0px;
+        background-image: url(../images/icon/images/white-rose.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        img{
+            display: none;
+        }
+        flex-direction: column;
+        height: auto;
+        form{
+            width: 70%;
+            height: auto;
+            padding:30px 0px;
+           
+        }
+    }
+
+}
+
 @media screen and(max-width:450px){
     section{
         div{
@@ -35,4 +58,15 @@
             }
         }
     }
+
+
+
+    footer{
+        
+        form{
+            width: 95%;
+            height: auto;
+        }
+    }
+
 }

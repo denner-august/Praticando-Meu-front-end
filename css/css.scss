@@ -45,14 +45,81 @@ section{
    div{
         margin-top: 5%;
        width: 50%;
-       color: #3E54A3;
+       color: #2f3d70;
        h2,p{
            font-size: 2rem;
        }
-   }
+   }   
+}
 
-   
-   
 
+footer{
+    height: 100vh;
+    background-color: #E82C4F;
+    display: flex;
    
+    
+    div{
+        width: 50vw;
+        height: 100%;
+
+        img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 80vh;
+        width: 45vw;
+        margin: auto;
+        color: black;
+        background-color: white;
+        border-radius: 20px;
+        padding: 10px;
+
+        h1{
+            text-align: center;
+        }
+        
+        input,button,textarea{
+            width: 70%;
+            padding: 10px;
+            font-size: 1rem;
+        }
+
+        input{
+            line-height: 50px;
+            padding-bottom: 10px;
+            border:none;
+            border-bottom: 1px solid;
+        }
+
+        textarea{
+            margin-top: 10px;
+            height: auto;
+            resize:none;
+            border:1px solid;
+        }
+
+        button{
+            background-color: white;
+            border:1px solid;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        button:focus{
+            background-color: rgb(218, 218, 218);
+        }
+
+        
+    }
 }
