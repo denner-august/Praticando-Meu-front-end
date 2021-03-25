@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 $padraoColor: #ffff;
 
@@ -21,12 +22,14 @@ header{
     padding: 30px;
     margin-bottom: 15px;
     flex-wrap: wrap;
+    
     ul{
        a{
            color: $padraoColor;
            text-decoration: none;
            font-size: 1.5rem;
            margin: 10px;
+           
        }
        a:hover{
            color: yellow;
