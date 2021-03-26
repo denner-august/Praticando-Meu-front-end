@@ -11,7 +11,7 @@ body {
   color: #ffff;
 }
 
-header {
+nav {
   height: auto;
   background-color: #182529;
   display: -webkit-box;
@@ -23,27 +23,28 @@ header {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding: 30px;
-  margin-bottom: 15px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 100%;
 }
 
-header ul a {
+nav ul a {
   color: #ffff;
   text-decoration: none;
   font-size: 1.5rem;
   margin: 10px;
 }
 
-header ul a:hover {
+nav ul a:hover {
   color: yellow;
 }
 
-header h1 {
+nav h1 {
   font-size: 2rem;
 }
 
-section {
+header {
+  margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,14 +54,76 @@ section {
   padding: 5px;
 }
 
-section div {
+header div {
   margin-top: 5%;
   width: 50%;
   color: #2f3d70;
 }
 
-section div h2, section div p {
+header div h2, header div p {
   font-size: 2rem;
+}
+
+main, #playlist {
+  height: 100vh;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 20px;
+  color: black;
+}
+
+#playlist {
+  text-align: center;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#playlist ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 90vh;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#playlist ul div {
+  width: 210px;
+  border: 1px solid;
+  border-radius: 10px;
+  height: 300px;
+  padding: 5px;
+  margin: 10px;
+}
+
+#playlist ul div p {
+  text-align: start;
+  margin: 10px;
+}
+
+#playlist ul div a {
+  text-decoration: none;
+  color: black;
+}
+
+#playlist ul div a:hover {
+  color: #2c2c29;
+  font-size: 1.3rem;
+}
+
+#playlist ul div img {
+  width: 200px;
+  border-radius: 10px;
 }
 
 footer {

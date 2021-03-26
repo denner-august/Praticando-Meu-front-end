@@ -1,0 +1,1 @@
+$("#mobile_open").click(()=>{})
