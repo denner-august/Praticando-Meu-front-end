@@ -24,7 +24,14 @@
 }
 
 @media screen and(max-width:751px){
-    
+    #playlist{
+        height: auto;
+        ul{
+            justify-content: center;
+            height: auto;
+        }
+    }
+
 
     footer{
         padding: 20px 0px;
