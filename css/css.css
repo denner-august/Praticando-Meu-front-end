@@ -64,24 +64,15 @@ header div h2, header div p {
   font-size: 2rem;
 }
 
-main, #playlist {
+main {
   height: 100vh;
+}
+
+main, #playlist, #ferramentas {
   border: 1px solid black;
   border-radius: 10px;
   margin: 20px;
   color: black;
-}
-
-#playlist {
-  text-align: center;
-  padding: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 #playlist ul {
@@ -92,17 +83,21 @@ main, #playlist {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  height: 90vh;
+  height: auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #playlist ul div {
   width: 210px;
   border: 1px solid;
   border-radius: 10px;
-  height: 300px;
+  height: auto;
   padding: 5px;
+  padding-bottom: 30px;
   margin: 10px;
 }
 
@@ -126,9 +121,58 @@ main, #playlist {
   border-radius: 10px;
 }
 
+#playlist, #ferramentas {
+  text-align: center;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+}
+
+#ferramentas ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#ferramentas ul div {
+  width: 210px;
+  border: 1px solid;
+  border-radius: 10px;
+  height: auto;
+  padding: 5px;
+  margin: 10px;
+}
+
+#ferramentas ul div p {
+  text-align: start;
+  margin: 10px;
+}
+
+#ferramentas ul div a {
+  text-decoration: none;
+  color: black;
+}
+
+#ferramentas img {
+  width: 200px;
+  border-radius: 10px;
+}
+
 footer {
   height: 100vh;
-  background-color: #E82C4F;
+  background: #ff002c;
+  background: linear-gradient(217deg, #ff002c 0%, rgba(18, 26, 126, 0.972893) 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -61,31 +61,35 @@ $boderConteudo: 1px solid black;
 $boder-radiuConteudo: 10px;
 $marginConteudo:20px;
 
-main,#playlist{
+main{
     height: $heigthConteudo;
+}
+main,#playlist,#ferramentas{
     border:$boderConteudo;
     border-radius: $boder-radiuConteudo;
     margin:$marginConteudo;
     color: black;
 }
 
+
+$imagesDosConteudos:200px;
+$borderDosConteudos: 10px;
+
 #playlist{
-    text-align: center;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
     ul{
         display: flex;
         flex-direction: row;
-        height: 90vh;
+        height: auto;
         flex-wrap: wrap;
+        justify-content: center;
 
         div{
             width: 210px;
             border:1px solid;
             border-radius: 10px;
-            height: 300px;
+            height: auto;
             padding: 5px;
+            padding-bottom: 30px;
             margin: 10px;
             p{
                 text-align: start;
@@ -102,19 +106,57 @@ main,#playlist{
                 font-size: 1.3rem;
             }
             img{
-                width: 200px;
-                border-radius: 10px;
+                width:$imagesDosConteudos;
+                border-radius: $borderDosConteudos;
             }
         }
-
-       
     }
+}
+#playlist,#ferramentas{
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+#ferramentas{
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        div{
+            width: 210px;
+            border:1px solid;
+            border-radius: 10px;
+            height: auto;
+            padding: 5px;
+            margin: 10px;
+
+            p{
+                text-align: start;
+                margin: 10px;
+            }
+
+            a{
+                text-decoration: none;
+                color: black;
+            }
+    }
+
+    }
+    img{
+        width:$imagesDosConteudos;
+        border-radius: $borderDosConteudos;
+    }
+  
 }
 
 
 footer{
     height: 100vh;
-    background-color: #E82C4F;
+    background: rgb(255,0,44);
+    background: linear-gradient(217deg, rgba(255,0,44,1) 0%, rgba(18,26,126,0.9728933809852066) 100%);
     display: flex;
    
     div{
