@@ -64,11 +64,11 @@ header div h2, header div p {
   font-size: 2rem;
 }
 
-main {
+main, #dicasProgramador {
   height: 100vh;
 }
 
-main, #playlist, #ferramentas {
+main, #playlist, #ferramentas, #dicasProgramador {
   border: 1px solid black;
   border-radius: 10px;
   margin: 20px;
@@ -121,7 +121,7 @@ main, #playlist, #ferramentas {
   border-radius: 10px;
 }
 
-#playlist, #ferramentas {
+#playlist, #ferramentas, #dicasProgramador {
   text-align: center;
   padding: 10px;
   display: -webkit-box;
@@ -167,6 +167,10 @@ main, #playlist, #ferramentas {
 #ferramentas img {
   width: 200px;
   border-radius: 10px;
+}
+
+#dicasProgramador {
+  text-align: center;
 }
 
 footer {

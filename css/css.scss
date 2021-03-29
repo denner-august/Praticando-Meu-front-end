@@ -61,10 +61,10 @@ $boderConteudo: 1px solid black;
 $boder-radiuConteudo: 10px;
 $marginConteudo:20px;
 
-main{
+main,#dicasProgramador{
     height: $heigthConteudo;
 }
-main,#playlist,#ferramentas{
+main,#playlist,#ferramentas,#dicasProgramador{
     border:$boderConteudo;
     border-radius: $boder-radiuConteudo;
     margin:$marginConteudo;
@@ -112,7 +112,7 @@ $borderDosConteudos: 10px;
         }
     }
 }
-#playlist,#ferramentas{
+#playlist,#ferramentas,#dicasProgramador{
     text-align: center;
     padding: 10px;
     display: flex;
@@ -149,9 +149,12 @@ $borderDosConteudos: 10px;
         width:$imagesDosConteudos;
         border-radius: $borderDosConteudos;
     }
-  
 }
 
+#dicasProgramador{
+   
+    text-align: center;
+}
 
 footer{
     height: 100vh;
