@@ -4,6 +4,8 @@ $('#mensagem_form').val('')
 
 $('form').submit(function () {
     $('#button').text('enviado com sucesso')
+    location.reload()
+
 });
 
 
