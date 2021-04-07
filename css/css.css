@@ -75,7 +75,7 @@ main, #playlist, #ferramentas, #dicasProgramador {
   color: black;
 }
 
-#playlist ul {
+main ul, #playlist ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -91,7 +91,7 @@ main, #playlist, #ferramentas, #dicasProgramador {
           justify-content: center;
 }
 
-#playlist ul div {
+main ul div, #playlist ul div {
   width: 210px;
   border: 1px solid;
   border-radius: 10px;
@@ -101,27 +101,27 @@ main, #playlist, #ferramentas, #dicasProgramador {
   margin: 10px;
 }
 
-#playlist ul div p {
+main ul div p, #playlist ul div p {
   text-align: start;
   margin: 10px;
 }
 
-#playlist ul div a {
+main ul div a, #playlist ul div a {
   text-decoration: none;
   color: black;
 }
 
-#playlist ul div a:hover {
+main ul div a:hover, #playlist ul div a:hover {
   color: #2c2c29;
   font-size: 1.3rem;
 }
 
-#playlist ul div img {
+main ul div img, #playlist ul div img {
   width: 200px;
   border-radius: 10px;
 }
 
-#playlist, #ferramentas, #dicasProgramador {
+main, #playlist, #ferramentas, #dicasProgramador {
   text-align: center;
   padding: 10px;
   display: -webkit-box;
@@ -132,6 +132,23 @@ main, #playlist, #ferramentas, #dicasProgramador {
       -ms-flex-direction: column;
           flex-direction: column;
   height: auto;
+}
+
+main {
+  margin-top: 60px;
+}
+
+main ul div {
+  width: auto;
+}
+
+main ul div p {
+  width: 300px;
+}
+
+main ul div img {
+  width: 25vw;
+  border-radius: 10px;
 }
 
 #ferramentas ul {

@@ -13,7 +13,6 @@ body{
 }
 
 nav{
-   
     height: auto;
     background-color: #182529;
     display: flex;
@@ -75,7 +74,10 @@ main,#playlist,#ferramentas,#dicasProgramador{
 $imagesDosConteudos:200px;
 $borderDosConteudos: 10px;
 
-#playlist{
+
+
+
+main,#playlist{
     ul{
         display: flex;
         flex-direction: row;
@@ -112,12 +114,28 @@ $borderDosConteudos: 10px;
         }
     }
 }
-#playlist,#ferramentas,#dicasProgramador{
+main,#playlist,#ferramentas,#dicasProgramador{
     text-align: center;
     padding: 10px;
     display: flex;
     flex-direction: column;
     height: auto;
+}
+
+main{
+    margin-top: 60px;
+    ul{
+        div{
+            width: auto;
+            p{
+                width: 300px;
+            }
+            img{
+                width: 25vw;
+                border-radius: $borderDosConteudos;
+            }
+        }
+    }
 }
 
 #ferramentas{
@@ -152,7 +170,6 @@ $borderDosConteudos: 10px;
 }
 
 #dicasProgramador{
-   
     text-align: center;
 }
 
